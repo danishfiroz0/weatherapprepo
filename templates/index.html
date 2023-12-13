@@ -1,0 +1,24 @@
+<!#i have to create simple form type of structure where people should enter city name, and the api will give whatever details it is going to give.>
+<!#then we will create the python code, >
+<html lang="en">
+<head>
+</head>
+<body>
+    <title>Search Page</title>
+    <div class="context">
+        <h1 style="text-align: center">Search</h1>
+
+        <div class="form">
+            <form action="/weatherapp" method="POST">  <!this form is going to send all the data to this route.>
+                <label for="city">enter city</label>
+                <input type="text" name="city" id="city">
+                <label for="units">enter units:</label>
+                <input type="text" name="unts" id="units">
+                <label for="appid">Enteryour API key: </label>
+                <input type="text" name="appid" id="appid">
+                <input type="submit" value="Seach">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

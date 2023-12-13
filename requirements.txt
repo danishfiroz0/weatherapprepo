@@ -1,0 +1,4 @@
+#requirements.txt file where we will keep all the libraries that is required.
+Flask           #(in enterprise based you are supposed to write versions because in some version there are some API's available and some are not, so based on your project which one are you using you have to mention it). here , we are not using versions, it will direclty install the suitable one....in this way(requests==2.24.0)
+gunicorn
+requests
