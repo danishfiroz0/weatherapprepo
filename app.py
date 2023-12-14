@@ -20,8 +20,9 @@ def get_weatherdata():
     }
 
     response = requests.get(url, params=param)
+    city=data['name']                                                      #new changes                     #why is this data mentioned before the data variable?
     data = response.json()
-    return f"data: {data}" #returning the json data to the user.
+    return f"data: {data} , city : {city}" #returning the json data to the user.,        #new changes.
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port= 5002)
